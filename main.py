@@ -11,5 +11,6 @@ bot = telebot.TeleBot(API_KEY)
                    
 @bot.message_handler(Commands=['getlink']     
                      
-  def getlink(mesaage):
-     bot.send_message(message.chat.id,"from here you can download shinchan movies...."
+  def start(mesaage):
+    msg = 'You can download movies from here...<b>**TTK X [FT] by <a href="https://t.me/shinchan_movies_hindi">**LINK**</a></b>\n<u>✨'
+    await message.reply(msg, parse_mode="html")
